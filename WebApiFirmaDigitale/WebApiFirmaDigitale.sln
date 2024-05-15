@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiFirmaDigitale", "WebApiFirmaDigitale.csproj", "{2742EACA-0306-4197-8EE5-FBC29D3E6BAC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignEngine", "..\SignEngine\SignEngine.csproj", "{82EE0E40-3C6F-479B-9403-1E8826D34CDF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignConsole", "..\SignConsole\SignConsole.csproj", "{527AD864-D435-4E8F-8F6A-3146AB252594}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignService", "..\SignService\SignService.csproj", "{814C783F-3461-4AAA-BC8B-F9ED3863E677}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BouncyCastle.Crypto", "..\..\bc-csharp\crypto\src\BouncyCastle.Crypto.csproj", "{00ACE5A4-9241-492F-8800-94C273B44B94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Publish|Any CPU = Publish|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2742EACA-0306-4197-8EE5-FBC29D3E6BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2742EACA-0306-4197-8EE5-FBC29D3E6BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2742EACA-0306-4197-8EE5-FBC29D3E6BAC}.Publish|Any CPU.ActiveCfg = Release|Any CPU
+		{2742EACA-0306-4197-8EE5-FBC29D3E6BAC}.Publish|Any CPU.Build.0 = Release|Any CPU
+		{2742EACA-0306-4197-8EE5-FBC29D3E6BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2742EACA-0306-4197-8EE5-FBC29D3E6BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82EE0E40-3C6F-479B-9403-1E8826D34CDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82EE0E40-3C6F-479B-9403-1E8826D34CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82EE0E40-3C6F-479B-9403-1E8826D34CDF}.Publish|Any CPU.ActiveCfg = Release|Any CPU
+		{82EE0E40-3C6F-479B-9403-1E8826D34CDF}.Publish|Any CPU.Build.0 = Release|Any CPU
+		{82EE0E40-3C6F-479B-9403-1E8826D34CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82EE0E40-3C6F-479B-9403-1E8826D34CDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{527AD864-D435-4E8F-8F6A-3146AB252594}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{527AD864-D435-4E8F-8F6A-3146AB252594}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{527AD864-D435-4E8F-8F6A-3146AB252594}.Publish|Any CPU.ActiveCfg = Release|Any CPU
+		{527AD864-D435-4E8F-8F6A-3146AB252594}.Publish|Any CPU.Build.0 = Release|Any CPU
+		{527AD864-D435-4E8F-8F6A-3146AB252594}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{527AD864-D435-4E8F-8F6A-3146AB252594}.Release|Any CPU.Build.0 = Release|Any CPU
+		{814C783F-3461-4AAA-BC8B-F9ED3863E677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{814C783F-3461-4AAA-BC8B-F9ED3863E677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{814C783F-3461-4AAA-BC8B-F9ED3863E677}.Publish|Any CPU.ActiveCfg = Release|Any CPU
+		{814C783F-3461-4AAA-BC8B-F9ED3863E677}.Publish|Any CPU.Build.0 = Release|Any CPU
+		{814C783F-3461-4AAA-BC8B-F9ED3863E677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{814C783F-3461-4AAA-BC8B-F9ED3863E677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00ACE5A4-9241-492F-8800-94C273B44B94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00ACE5A4-9241-492F-8800-94C273B44B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00ACE5A4-9241-492F-8800-94C273B44B94}.Publish|Any CPU.ActiveCfg = Publish|Any CPU
+		{00ACE5A4-9241-492F-8800-94C273B44B94}.Publish|Any CPU.Build.0 = Publish|Any CPU
+		{00ACE5A4-9241-492F-8800-94C273B44B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00ACE5A4-9241-492F-8800-94C273B44B94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0DC5246-8A41-4A83-9348-2F79EBCF1E0A}
+	EndGlobalSection
+EndGlobal
