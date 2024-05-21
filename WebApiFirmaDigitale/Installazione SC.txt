@@ -1,0 +1,1 @@
+sc create WebApiFirmaDigitale displayname= "Evo - WebApiFirmaDigitale"  binPath= "C:\Users\daniele.oppezzo_smeu\Documents\GitHub\WebApi-Firma-Digitale\WebApiFirmaDigitale\bin\Release\net8.0\publish\WebApiFirmaDigitale.exe"

@@ -4,5 +4,6 @@
     {
         string GetUsbTokens();
         string GetCertificates(string pin);
+        object Sign(string b64sourceFile,  string idCert, string pin);
     }
 }

@@ -10,5 +10,6 @@ namespace SignEngineLibrary
     {
         string GetUsbTokensInfo();
         string GetCertificates(string pin);
+        object SignFile(string b64sourceFile,   string idCert, string pin);
     }
 }

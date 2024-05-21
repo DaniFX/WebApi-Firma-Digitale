@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SignConsole
+namespace SignEngineLibrary
 {
-    public  class Pkcs11Signer: IStreamCalculator<IBlockResult>
+    public class Pkcs11Signer : IStreamCalculator<IBlockResult>
     {
         private readonly ISession _session;
-        
+
         private readonly string _algorithm;
         private MemoryStream _stream;
 
@@ -21,18 +21,18 @@ namespace SignConsole
 
         public Pkcs11Signer(ISession session, string algorithm, string id)
         {
-            _session = session;            
+            _session = session;
             _algorithm = algorithm;
             _stream = new MemoryStream();
-            _id=id;
+            _id = id;
         }
 
         public Stream Stream => _stream;
 
         IBlockResult IStreamCalculator<IBlockResult>.GetResult()
         {
-            
-            
+
+
 
             // Retrieve the data to be signed
             byte[] data = _stream.ToArray();
@@ -48,7 +48,7 @@ namespace SignConsole
             List<IObjectAttribute> privateKeySearchTemplate = new List<IObjectAttribute>
                 {
                       _session.Factories.ObjectAttributeFactory.Create(CKA.CKA_CLASS, CKO.CKO_PRIVATE_KEY),
-                      _session.Factories.ObjectAttributeFactory.Create(CKA.CKA_ID,_id) 
+                      _session.Factories.ObjectAttributeFactory.Create(CKA.CKA_ID,_id)
                 };
 
             List<IObjectHandle> foundObjects = _session.FindAllObjects(privateKeySearchTemplate);
@@ -61,7 +61,7 @@ namespace SignConsole
             List<IObjectAttribute> publicKeySearchTemplate = new List<IObjectAttribute>
                 {
                      _session.Factories.ObjectAttributeFactory.Create(CKA.CKA_CLASS, CKO.CKO_PUBLIC_KEY),
-                     _session.Factories.ObjectAttributeFactory.Create(CKA.CKA_ID, _id) 
+                     _session.Factories.ObjectAttributeFactory.Create(CKA.CKA_ID, _id)
                 };
 
             foundObjects = _session.FindAllObjects(publicKeySearchTemplate);
@@ -71,7 +71,7 @@ namespace SignConsole
             IObjectHandle publicKey = foundObjects[0];
 
             // Sign data
-            
+
             IMechanism mechanism = _session.Factories.MechanismFactory.Create(CKM.CKM_SHA256_RSA_PKCS);
             byte[] signature = _session.Sign(mechanism, privateKey, data);
 
@@ -144,7 +144,7 @@ namespace SignConsole
             session.GenerateKeyPair(mechanism, publicKeyAttributes, privateKeyAttributes, out publicKeyHandle, out privateKeyHandle);
         }
 
-        
+
     }
 
     public class SimpleBlockResult : IBlockResult

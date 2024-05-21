@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SignConsole": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\EvoFile\\IT10138110969_271WU.xml\" \"C:\\Swap\\IT10138110969_271WU.xml\" 98119133"
+    }
+  }
+}
